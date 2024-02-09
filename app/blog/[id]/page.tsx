@@ -2,41 +2,29 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import { EditRow } from "./components/edit-row"
+import { ICar } from "@/types/car"
+import { getAllCars } from "@/data/getCars"
 // import React, { useState } from "react"
 
 type Props = {
   params: {
-    id: string
+    id: number
   }
 }
 
-export type CarProps = {
-  id: number;
-  car: string;
-  car_model: string;
-  car_model_year: number;
-  car_vin: string;
-  car_color: string;
-  price: string;  
-}
-
-async function getData(id: string) {
-  const response = await fetch(`https://myfakeapi.com/api/cars/${id}`)
-  const responseJson = response.json();
-  const getCar = await responseJson;
-  const car = getCar.Car;
-  return car;
-}
-
 export async function generateMetadata({ params: {id} }: Props ): Promise<Metadata> {
-  const car = await getData(id)
+  // const car = await getData(id)
+  const car = (await getAllCars()).find(car => car.id.toString() === id.toString());
   return {
-    title: car.car,
+    title: car ? car.car : "",
   }
 }
 
 export default async function Post({ params: {id} }: Props ) {
-  const car: CarProps = await getData(id);
+  const cars = await getAllCars();
+  const car = cars.find(car => car.id.toString() === id.toString());
+  
+  // const car: ICar = await getData(id);
   // const [ state, setState ] = useState<CarProps>({
   //   id: car.id,
   //   car: car.car,
@@ -55,6 +43,8 @@ export default async function Post({ params: {id} }: Props ) {
   const onSubmit = (value: string) => {
     // setState({...state})
   }
+
+  if (!car) return <>No Data Found</>
 
   return <div className="wrapper_car_detail">
     <Image priority src="/space-vector-illustration.jpg" alt="" fill style={{zIndex: "-5"}}/>

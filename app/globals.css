@@ -159,8 +159,53 @@ input {
   border: 1px solid #bbbbbb;
   border-radius: 4px;
   width: 100%;
-  max-width: 380px;
+  max-width: 385px;
+  /* height: fit-content; */
 }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card_item-wrap {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #5c5c5c;
+  border: 1px solid #e8e8e8;
+  border-radius: 13px;
+  background-color: #e8e8e8;
+  padding: 4px 12px;
+  width: fit-content;
+}
+
+.card_item-wrap svg {
+  width: 15px;
+  height: 15px;
+  color: #5c5c5c;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+.price span {
+  font-size: 12px;
+}
+
+.price div {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 
 
 /* ------- Car Detail Page --------- */
@@ -194,18 +239,22 @@ input {
 
 .card_title {
   color: black;
-  font-weight: 400;
-  font-size: 2.125rem;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 2.75rem;
 }
 
 .card_model_year {
+  text-align: right;
+  margin-bottom: 5px;
   color: rgba(0, 0, 0, 0.622);
 }
 
 .price {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
 }
 
 .price h6 {

@@ -12,7 +12,7 @@ interface AddCarModalProps {
 }
 
 export const AddCarModal = ({ modalOpen, car, setModalOpen, onSubmit }: AddCarModalProps) => {
-  return <div className="modal-wrapper" style={{display: modalOpen ? "unset" : "none"}} onClick={() => setModalOpen(false)}>
+  return <div className="modal-wrapper" style={{display: modalOpen ? "unset" : "none"}}>
     <div className="modal">
       <form onSubmit={(e) => onSubmit(e)} className="card_info">
         <FontAwesomeIcon icon={faXmark} className="car_delete-icon" onClick={() => setModalOpen(false)}/>

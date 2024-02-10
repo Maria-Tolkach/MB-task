@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 export default async function Blog() {
   const cars = await getAllCars();
   return <div className="wrapper">
-    <h1>Cars Page</h1>
+    <h1 className="page_title">NA VÝBĚR JE VELKÉ MNOŽSTVÍ VOZŮ.</h1>
+    <button className="button">Přidat</button>
     <ul className="list_wrapper">
       { cars.length > 0 && cars.map((car: ICar, index: number) => {
         return <Card key={index} car={car}/>

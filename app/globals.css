@@ -71,30 +71,6 @@ input {
 .container {
   display: flex;
   justify-content: center;
-
-  /* max-width: 1680px; */
-
-  /* max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto; */
-
-  /* @media (max-width: 1200px) {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 1000px;
-  }
-
-  @media (max-width: 768px) {
-    max-width: 1000px;
-  }
-
-  @media (max-width: 420px) {
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  } */
 }
 
 .about-page {
@@ -154,13 +130,38 @@ input {
   border-radius: 5px;
 }
 
+.page_title {
+  margin-top: 20px;
+}
+
 .card {
   padding: 10px;
   border: 1px solid #bbbbbb;
   border-radius: 4px;
   width: 100%;
   max-width: 385px;
+  position: relative;
   /* height: fit-content; */
+}
+
+.car_edit-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 45px;
+  color: #8080809e;
+  cursor: pointer;
+}
+
+.car_delete-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 10px;
+  color: #8080809e;
+  cursor: pointer;
 }
 
 .content-wrapper {
@@ -206,7 +207,22 @@ input {
   line-height: 1.75rem;
 }
 
+.button {
+  color: #333;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  margin: auto;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: inherit;
+}
 
+.button:hover {
+  background-color: #f4f4f4;
+}
 
 /* ------- Car Detail Page --------- */
 .wrapper_car_detail {
@@ -260,4 +276,32 @@ input {
 .price h6 {
   font-size: 12px;
   font-weight: 400;
+}
+
+
+/* -------- Modal ---------- */
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0000004D;
+  z-index: 10;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal .card_info {
+  position: relative;
+  max-width: 500px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

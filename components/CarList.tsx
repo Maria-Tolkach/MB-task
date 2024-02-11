@@ -1,7 +1,7 @@
 'use client';
-import { getAllCars } from "@/data/getCars";
 import { ICar } from "@/types/car";
 import { Card } from "./Card";
+import { getAllCars } from "@/data/api";
 
 export const CarList = async () => {
   const cars = await getAllCars();

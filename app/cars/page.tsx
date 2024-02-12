@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Cars() {
   return <div className="wrapper">
-    <h1 className="page_title">NA VÝBĚR JE VELKÉ MNOŽSTVÍ VOZŮ.</h1>
+    <h1 className="page_title">A LARGE NUMBER OF CARS TO CHOOSE FROM.</h1>
     <AddNewCar/>
     <CarList/>
   </div>

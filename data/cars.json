@@ -7,7 +7,7 @@
       "car_color": "Yellow",
       "car_model_year": 2002,
       "car_vin": "SAJWJ0FF3F8321657",
-      "price": "$2814.46",
+      "price": "$2814.465555555",
       "availability": false
     },
     {
@@ -288,16 +288,6 @@
       "car_model_year": 1995,
       "car_vin": "WBAKA4C56CC120857",
       "price": "$1828.44",
-      "availability": false
-    },
-    {
-      "id": "30",
-      "car": "Land Rover",
-      "car_model": "Discovery Series II",
-      "car_color": "Orange",
-      "car_model_year": 2002,
-      "car_vin": "1D7RE3BK4AS603019",
-      "price": "$2911.93",
       "availability": false
     },
     {
@@ -733,6 +723,15 @@
       "car_vin": "win666",
       "car_color": "Blue",
       "price": "4000"
+    },
+    {
+      "id": "0210cd38-8e7b-4041-8573-09488ad9e4ba",
+      "car": "Volkswagen",
+      "car_model": "Vento",
+      "car_model_year": 2024,
+      "car_vin": "win5020",
+      "car_color": "Silver",
+      "price": "3000"
     }
   ]
 }

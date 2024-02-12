@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import { getAllCars } from "@/data/api"
-import { EditCard } from "./components/edit-card"
+import { InfoCard } from "./components/info-card"
 
 type Props = {
   params: {
@@ -24,9 +24,7 @@ export default async function Post({ params: {id} }: Props ) {
 
   return <div className="wrapper_car_detail">
     <Image priority src="/space-vector-illustration.jpg" alt="" fill style={{zIndex: "-5"}}/>
-    <div className="img">
-      <Image priority src="/car-exhibition.png" alt="" width={800} height={800}/>
-    </div>
-    <EditCard car={car}/>
+    <Image priority src="/car-exhibition.png" alt="" width={600} height={600}/>
+    <InfoCard car={car}/>
   </div>
 }

@@ -1,6 +1,6 @@
 'use client';
 import { FormEvent, useState } from "react"
-import { AddCarModal } from "./AddCarModal"
+import { AddEditCarModal } from "./AddEditCarModal"
 import { ICar } from "@/types/car";
 import { useRouter } from "next/navigation";
 import { addCar } from "@/data/api";
@@ -23,7 +23,6 @@ export const AddNewCar = () => {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await addCar(newCar)
-    console.log(111, newCar)
     setNewCar({
       id: carId,
       car: "",
@@ -38,8 +37,9 @@ export const AddNewCar = () => {
   }
 
   return <>
-    <button className="button" onClick={() => setModalOpen(!modalOpen)}>Přidat</button>
-    <AddCarModal modalOpen={modalOpen} 
+    <button className="button" onClick={() => setModalOpen(!modalOpen)}>Add New Car</button>
+    <AddEditCarModal modalOpen={modalOpen}
+                 title="Add Car" 
                  setModalOpen={setModalOpen}
                  car={newCar}
                  setNewCar={setNewCar}

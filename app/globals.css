@@ -227,16 +227,11 @@ input {
 /* ------- Car Detail Page --------- */
 .wrapper_car_detail {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 24px 0;
   width: 100%;
   max-width: 1420px;
   overflow: hidden;
-}
-
-.img {
-  width: 400px;
-  height: 200px;
 }
 
 .card_info {

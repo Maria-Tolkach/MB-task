@@ -24,7 +24,6 @@ export const Card = ({car}: CardProps) => {
   const onSubmitEditCar = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     await aditCar(editCar)
-    setEditCar({...car})
     setOpenModalEdit(false)
     router.refresh()
   }

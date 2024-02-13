@@ -7,7 +7,7 @@
       "car_color": "Yellow",
       "car_model_year": 2002,
       "car_vin": "SAJWJ0FF3F8321657",
-      "price": "$2814.465555555",
+      "price": "$2814.46",
       "availability": false
     },
     {
@@ -38,16 +38,6 @@
       "car_model_year": 2012,
       "car_vin": "4USBT33454L511606",
       "price": "$2732.99",
-      "availability": false
-    },
-    {
-      "id": "5",
-      "car": "Mitsubishi",
-      "car_model": "Lancer Evolution",
-      "car_color": "Purple",
-      "car_model_year": 2002,
-      "car_vin": "WAU2GBFCXDN339713",
-      "price": "$3849.47",
       "availability": false
     },
     {
@@ -184,7 +174,7 @@
       "id": "19",
       "car": "Dodge",
       "car_model": "Viper",
-      "car_color": "Turquoise",
+      "car_color": "Turq",
       "car_model_year": 1999,
       "car_vin": "WAUMF98P66A420495",
       "price": "$1323.48",
@@ -358,16 +348,6 @@
       "car_model_year": 1991,
       "car_vin": "1N4AL2AP1BN203395",
       "price": "$3968.20",
-      "availability": false
-    },
-    {
-      "id": "38",
-      "car": "Mercedes-Benz",
-      "car_model": "SLR McLaren",
-      "car_color": "Orange",
-      "car_model_year": 2008,
-      "car_vin": "WBAPK53549A473174",
-      "price": "$1437.86",
       "availability": false
     },
     {
@@ -716,15 +696,6 @@
       "price": "7000"
     },
     {
-      "id": "2ce9692d-491f-4ec6-8900-4e7d048e06f0",
-      "car": "Opel",
-      "car_model": "Omega",
-      "car_model_year": 2024,
-      "car_vin": "win666",
-      "car_color": "Blue",
-      "price": "4000"
-    },
-    {
       "id": "0210cd38-8e7b-4041-8573-09488ad9e4ba",
       "car": "Volkswagen",
       "car_model": "Vento",
@@ -732,6 +703,15 @@
       "car_vin": "win5020",
       "car_color": "Silver",
       "price": "3000"
+    },
+    {
+      "id": "63f7ff69-595f-4962-b0dd-a1de03e62fe1",
+      "car": "Volkswagen",
+      "car_model": "Golf",
+      "car_model_year": 2024,
+      "car_vin": "win555",
+      "car_color": "Maroon",
+      "price": "2000"
     }
   ]
 }

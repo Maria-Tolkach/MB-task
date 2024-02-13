@@ -18,7 +18,6 @@ export const Card = ({car}: CardProps) => {
   const router = useRouter();
   const [openModalEdit, setOpenModalEdit] = useState<boolean>(false);
   const [openModalDelete, setOpenModalDelete] = useState<boolean>(false);
-  // const [deleteCar, setDeleteCar] = useState<ICar>(car);
   const [editCar, setEditCar] = useState<ICar>({...car});
 
   const onSubmitEditCar = async (e: FormEvent<HTMLFormElement>) => {
@@ -37,7 +36,7 @@ export const Card = ({car}: CardProps) => {
 
   return <li className="card">
     <Link href={`/cars/${car.id}`}>
-      <Image priority src="/car-exhibition.png" alt="" width={360} height={360}/>
+      <Image priority src="/car-exhibition.png" alt="" width={300} height={300}/>
       <div className="content-wrapper">
         <h3 className="card_title">{car.car} {car.car_model}</h3>
         <div className="card_model_year">{car.car_model_year}</div>

@@ -10,11 +10,9 @@ interface EditRowProps {
 
 export const EditRow = ({name, value, disabled, onChange}: EditRowProps) => {
   const type = () => {
-    // if (typeof value === "string") {
-    //   return "text"
-    // } else if (typeof value === "number") {
-    //   return "number"
-    // }
+    if (typeof value === "number") {
+      return "number"
+    }
     return "text"
   }
 

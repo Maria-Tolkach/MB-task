@@ -1,4 +1,4 @@
-import { EditRow } from "@/app/cars/[id]/components/edit-row"
+import { EditRow } from "@/app/cars/[id]/components/EditRow"
 import { ICar } from "@/types/car"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'

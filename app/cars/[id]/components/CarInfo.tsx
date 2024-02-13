@@ -1,14 +1,12 @@
-'use client';
 import { ICar } from "@/types/car";
-import { EditRow } from "./edit-row";
-import { useRouter } from "next/navigation";
+import { EditRow } from "./EditRow";
 import Link from "next/link";
 
-interface InfoCardProps {
+interface InfoCarProps {
   car: ICar;
 }
 
-export const InfoCard = ({car}: InfoCardProps) => {
+export const InfoCar = ({car}: InfoCarProps) => {
   return <div className="card_info">
     <h3 className="card_title">Info:</h3>
 

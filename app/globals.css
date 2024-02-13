@@ -122,7 +122,8 @@ input {
 }
 
 .list_wrapper::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
+  height: 15px;
 }
 
 .list_wrapper::-webkit-scrollbar-thumb {
@@ -135,13 +136,12 @@ input {
 }
 
 .card {
-  padding: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
   border: 1px solid #bbbbbb;
   border-radius: 4px;
-  width: 100%;
-  max-width: 385px;
-  position: relative;
-  /* height: fit-content; */
+  text-align: center;
 }
 
 .car_edit-icon {
@@ -168,6 +168,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 0 10px 10px 10px;
 }
 
 .card_item-wrap {
@@ -175,6 +176,7 @@ input {
   gap: 5px;
   align-items: center;
   color: #5c5c5c;
+  font-size: 12px;
   border: 1px solid #e8e8e8;
   border-radius: 13px;
   background-color: #e8e8e8;
@@ -218,6 +220,7 @@ input {
   cursor: pointer;
   font-weight: 400;
   background-color: inherit;
+  border: 1px solid black;
 }
 
 .button:hover {

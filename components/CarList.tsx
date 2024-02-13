@@ -1,13 +1,14 @@
 'use client';
 import { ICar } from "@/types/car";
 import { Card } from "./Card";
-import { getAllCars } from "@/data/api";
 
-export const CarList = async () => {
-  const cars = await getAllCars();
+interface CarListProps {
+  cars?: Array<ICar>;
+}
 
+export const CarList = async ({cars}: CarListProps) => {
   return <ul className="list_wrapper">
-    { cars.length > 0 && cars.map((car: ICar, index: number) => {
+    { cars!.length > 0 && cars!.map((car: ICar, index: number) => {
       return <Card key={index} car={car}/>
     }) }
   </ul>

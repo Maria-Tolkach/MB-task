@@ -1,3 +1,4 @@
+'use client';
 import { ICar } from "@/types/car";
 import { EditRow } from "./EditRow";
 import Link from "next/link";

@@ -1,4 +1,3 @@
-import { ICar } from "@/types/car"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Dispatch, FormEvent, SetStateAction } from "react";

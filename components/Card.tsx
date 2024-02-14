@@ -59,6 +59,6 @@ export const Card = ({car}: CardProps) => {
                  onSubmit={onSubmitEditCar} />
 
     <FontAwesomeIcon icon={faTrashCan} onClick={() => setOpenModalDelete(true)} className="car_delete-icon"/>
-    <DeleteCarModal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete} onSubmit={onSubmitDeleteCar} title="Are you sure, you want to delit this car?"/>
+    <DeleteCarModal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete} onSubmit={onSubmitDeleteCar} title="Are you sure, you want to delete this car?"/>
   </li>
 }
